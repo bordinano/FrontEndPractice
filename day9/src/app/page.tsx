@@ -1,29 +1,29 @@
-export default function Home() {
+export default function Rating() {
   return (
-    <main className="bg-slate-950 min-h-screen flex justify-center items-center">
-      <div className="bg-slate-900 h-[35rem] w-[35rem] rounded-[2rem] p-8 space-y-10">
-        <div className="bg-slate-800 h-[3rem] w-[3rem] rounded-full flex justify-center items-center">
-          <span className="text-2xl">⭐</span>
+    <main className="bg-slate-950  flex justify-center items-center min-h-screen">
+      <div className="bg-slate-900 p-8 space-y-12 w-[35rem] h-[38rem] rounded-[3rem]">
+        <div className="flex items-center justify-center bg-slate-800 w-[3rem] h-[3rem] rounded-full">
+          <span className="text-amber-500 text-3xl font-bold">O</span>
         </div>
-        <div className="space-y-4">
-          <h1 className="font-bold text-4xl">How's My Service?</h1>
-          <p className="text-slate-400 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            quaerat asperiores in aliquam ut blanditiis autem error veniam et
-            ipsum, obcaecati tempore repudiandae ipsa dolores culpa? Eligendi
-            temporibus commodi quo.{" "}
+        <div className="space-y-9">
+          <h1 className="font-bold text-4xl">What can you rate?</h1>
+          <p className="text-lg text-neutral-400">
+            Basta sentence na ano ahasudagsdui asgdi hasuid asuidgasiuguasgdusai
+            asui dgasuidg asuidg asudg asuig asd as asjhdasgd osd uasgd iuasgd
+            uiasd saduiashd
           </p>
         </div>
-        <div className="flex justify-center gap-9">
+        <div className="flex gap-9 justify-center">
           {[1, 2, 3, 4, 5].map((n) => (
-            <button className="bg-slate-800 w-[4rem] h-[4rem] text-neutral-400 rounded-full hover:bg-amber-600 hover:text-black transition-all duration-200">
+            <button className="text-2xl font-bold bg-slate-800 w-[4rem] h-[4rem] rounded-full text-neutral-500 hover:bg-amber-600 hover:text-black">
               {n}
             </button>
           ))}
         </div>
-        <div className="flex justify-center ">
-          <button className="bg-white text-black w-[50rem] h-[4rem] text-2xl font-bold rounded-[2rem] hover:bg-amber-600">SUBMIT</button>
+        <div className="flex  text-xl font-bold text-black justify-center">
+          <button className="bg-white w-[30rem] h-[4rem] rounded-[3rem] hover:bg-amber-600">SUBMIT</button>
         </div>
+      
       </div>
     </main>
   );
